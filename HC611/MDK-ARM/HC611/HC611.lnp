@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"hc611\startup_stm32f103xe.o"
+"hc611\main.o"
+"hc611\gpio.o"
+"hc611\tim.o"
+"hc611\usart.o"
+"hc611\stm32f1xx_it.o"
+"hc611\stm32f1xx_hal_msp.o"
+"hc611\stm32f1xx_hal_gpio_ex.o"
+"hc611\stm32f1xx_hal_tim.o"
+"hc611\stm32f1xx_hal_tim_ex.o"
+"hc611\stm32f1xx_hal.o"
+"hc611\stm32f1xx_hal_rcc.o"
+"hc611\stm32f1xx_hal_rcc_ex.o"
+"hc611\stm32f1xx_hal_gpio.o"
+"hc611\stm32f1xx_hal_dma.o"
+"hc611\stm32f1xx_hal_cortex.o"
+"hc611\stm32f1xx_hal_pwr.o"
+"hc611\stm32f1xx_hal_flash.o"
+"hc611\stm32f1xx_hal_flash_ex.o"
+"hc611\stm32f1xx_hal_exti.o"
+"hc611\stm32f1xx_hal_uart.o"
+"hc611\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "HC611\HC611.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HC611.map" -o HC611\HC611.axf
